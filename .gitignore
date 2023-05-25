@@ -1,0 +1,9 @@
+bin
+obj
+.vs
+*.user
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+tfplan
