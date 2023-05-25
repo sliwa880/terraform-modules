@@ -45,12 +45,12 @@ resource "azapi_resource" "container_app" {
           external   = true
           targetPort = 80
         }
-        # dapr = {
-        #   appId = var.service_name
-        #   appPort = var.dapr_app_port
-        #   appProtocol = "http"
-        #   enabled = var.is_dapr_enabled
-        # }
+        dapr = {
+          appId = var.service_name
+          appPort = var.dapr_app_port
+          appProtocol = "http"
+          enabled = var.is_dapr_enabled
+        }
         registries = [
           {
             server   = data.azurerm_container_registry.sat_acr.login_server
